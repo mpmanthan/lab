@@ -18,6 +18,7 @@ pipeline {
                     def dockerCredentialsId = "Docker-cred"
                     // starting build process
                     def dockerBuild = docker.build("${dockerImage}:${dockerTag}",'.')
+                    dockerBuild.push()
                 }
             }
         }
