@@ -25,7 +25,7 @@ pipeline {
             }
         }
         stage('container') {
-        agent Node1
+        agent any
             steps {
                 sh 'docker run -d -p 8000:80 --name done mpmanthan/firstimage:v1'
             }
