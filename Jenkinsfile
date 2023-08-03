@@ -1,5 +1,5 @@
 pipeline {
-    agent Node1
+    agent any
 
     stages {
         stage('go to git') {
@@ -25,7 +25,7 @@ pipeline {
             }
         }
         stage('container') {
-            agent Node1
+        agent Node1
             steps {
                 sh 'docker run -d -p 8000:80 --name done mpmanthan/firstimage:v1'
             }
