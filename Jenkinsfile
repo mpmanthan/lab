@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Docker image and tags
-                    def dockerImage = "mpmanthan/sisl"
+                    def dockerImage = "mpmanthan/firstimage"
                     def dockerTag = "v1"
                     def dockerCredentialsId = "Docker-cred"
                     // starting build process
