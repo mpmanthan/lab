@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+    agent Node1
 
     stages {
         stage('go to git') {
